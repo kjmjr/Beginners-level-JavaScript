@@ -1,0 +1,144 @@
+<!Doctype html>
+<html>
+
+<head>
+
+<title> Mystery Phrase </title>
+
+<link href="kevinm_mpstyles.css" type="text/css" rel="stylesheet" />
+    <style>
+
+        footer{
+
+            background-color: black;
+            color: white;
+           padding: 3%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Psudocode
+
+    1. Identify four concepts that can be used together to make the Mystery Phrase Web page interactive.
+
+    -use the function names(String fn, String ln) to present the first and last name by accessing each element
+    -create a function that will take the first and last name to invoke into the main function
+    -name and phrase will be displayed in different colors in the DOM with the css file
+    -use jquery (document.querySelector) to select the items in a for loop when unscrambling each word out of the sentence
+    -use an event handler on the unscramble button saying "thanks for unscrambling me"
+    -use an event listener displaying an alert message when the user clicks the Clear results button, have it say "thanks for
+    running the program! Please run it again"
+
+
+    2. Describe the desired outcomes(s) as well as how the chosen concepts can be used to achieve the desired outcome(s);
+    include enough detail for a site developer to create javaScript code that implements your desired outcome(s)
+
+
+    //javaScript file
+    Phase1.js
+
+    function unscramblePhrase{
+
+      String firstName;
+      String lastName;
+
+      names(firstName, lastName);
+
+      if the user clicks the clear result button {
+
+        -call the alertMessage(firstName, lastName); function
+
+      }
+
+      use the querySelectorAll ('p') to get everything in the p tag
+
+      set each letter to a list of chars from the p tag
+
+      for loop through each letter of the chars
+
+      if the letters have a number or period
+
+      trim numbers out using the trim function
+
+      trim the periods out using the trim function
+
+
+
+    }
+
+    function names(String fn, String ln){
+
+        get firstName_id
+        get lastName_id
+
+        Display on Screen
+    }
+
+    function alertMessage(String fn, String ln){
+
+
+        alert("thanks for
+    running the program! Please run it again");
+
+    -set the text box of firtName and lastName back to an empty string problematically
+
+    }
+
+    3. Discuss the different ways a site developer can incorporate javaScript into a Web page?
+
+    A site developer can have little message pop up or messages that pop up that say different things according to what
+    is typed. They can have messages saying whether or not the input is correct
+
+
+    -use css to display colors to the text and elements using javaScript
+
+    ask how to remove elements from the DOM using the clear button
+
+
+
+
+    -->
+
+    <h1>Mystery Phrase Web Form </h1>
+
+    <hr />
+    <div id="div1">
+
+        <p id="jumble_sentence_id">
+            lchallenge.21 uthey16 lam2 lgreatest12 llearning3
+            lup18 lmy7 land13 lthe11 lis6 lsmartest14 lteacher.8 lto19 ujavascript.4
+            lstudents.15 ui1 ushe9 lstepped17 utina5 lthe20 lhas10
+        </p>
+
+    </div>
+    <table id="table_id" class="table_class">
+        <tr><td>First Name:</td><td><input type="text" id="firstName_id"></td></tr>
+        <tr><td>Last Name:</td><td><input type="text" id="lastName_id"></td></tr>
+
+    </table>
+
+    <hr />
+
+    <div id="button_id">
+        <button id="unscramblePhrase_id">Unscramble </button>
+        <button id="clearResults_id">Clear Page</button>
+
+
+    </div>
+
+
+
+    <p id="click_id"> Click the button to unscramble the paragraph</p>
+
+    <p id="results_id"></p>
+
+
+
+    <script src="kevinm_mpscript.js"></script>
+
+    <footer> Hello World</footer>
+
+</body>
+</html>
